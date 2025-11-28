@@ -7,6 +7,159 @@
 
 body {
   background: #0a0f1f;
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #5cc4ff;
+}
+
+/* HERO SECTION */
+.hero {
+  text-align: center;
+  margin-top: 120px;
+}
+
+.main-title {
+  font-size: 90px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.sub-title {
+  font-size: 45px;
+  color: #91ffb5;
+  margin-top: 10px;
+}
+
+.desc {
+  margin-top: 15px;
+  font-size: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* INTRO */
+.intro {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.intro h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.content-box {
+  background: #111929;
+  width: 60%;
+  margin: auto;
+  padding: 30px;
+  border-radius: 14px;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+
+/* HOVER GLOW ANIMATION FOR TABLE ROWS */
+table tr {
+    transition: all 0.3s ease-in-out;
+}
+
+table tr:hover {
+    background-color: rgba(0, 234, 255, 0.15);
+    transform: scale(1.02);
+    box-shadow: 0 0 15px #00eaff;
+}
+
+/* GLOW EFFECT AROUND TABLE */
+table {
+    box-shadow: 0 0 20px rgba(0, 234, 255, 0.3);
+    transition: 0.4s ease-in-out;
+}
+
+table:hover {
+    box-shadow: 0 0 35px rgba(0, 234, 255, 0.6);
+}
+
+/* NAVBAR HOVER POP EFFECT */
+.nav-links a {
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff;
+  
+}
+.team-table-container {
+    width: 80%;
+    margin: 50px auto;
+    
+    
+}
+
+.team-table-container table {
+    width: 100%;      /* Expands table to fill container width */
+    height: 100%;     /* Expands table to fill container height */
+    border-collapse: collapse; /* Optional: clean borders */
+}
+
+.team-table-container th,
+.team-table-container td {
+    font-size: 16px;  /* Increase font size (adjust as needed, e.g., 18px or 1.2em) */
+    padding: 8px;     /* Adds space for readability */
+    text-align: center;
+    border: 1px solid #ccc; /* Optional: visible borders */
+}
+
+/* Optional: Larger font for headers */
+.team-table-container th {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #0a0f1f;
   display: flex;
   justify-content: center;
   align-items: center;
